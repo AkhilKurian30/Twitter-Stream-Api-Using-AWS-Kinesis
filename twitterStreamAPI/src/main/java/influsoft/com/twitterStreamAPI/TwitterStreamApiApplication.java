@@ -29,16 +29,16 @@ public class TwitterStreamApiApplication {
 
 	public static void main(String[] args) throws TwitterException {
 
-		BasicAWSCredentials cred = new BasicAWSCredentials("AKIAXICOLQGEAUY5J3OC", "UsLlphicBuUGqW+Hi9JpeONhssoZtHCTd6aD2dOO");
+		BasicAWSCredentials cred = new BasicAWSCredentials("", "");
 		KinesisProducerConfiguration kpConfig = new KinesisProducerConfiguration()
 				.setCredentialsProvider(new AWSStaticCredentialsProvider(cred)).setRegion("us-east-2")
 				.setVerifyCertificate(false);
 		final KinesisProducer producer = new KinesisProducer(kpConfig);
 
-		String access_token = "1371742458447503364-FOWwafJhWjBoScJRObin2kCczeR4Ux";
-		String access_token_secret = "iC5Aat22VV0s0wFsHNhMl8IsE1LYnPl4ZiGDFacvZQ3sF";
-		String consumer_key = "2OQjWAZ7OnL36OcnS0v6OacuA";
-		String consumer_secret = "1YR0SUomhJV1lKBv742JiFuZQ3xDZGH6CrIFQWNijWsFWKJVOT";
+		String access_token = "";
+		String access_token_secret = "";
+		String consumer_key = "";
+		String consumer_secret = "";
 
 		ConfigurationBuilder cb = new ConfigurationBuilder();
 		cb.setDebugEnabled(false)
