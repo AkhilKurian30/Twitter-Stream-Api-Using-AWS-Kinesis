@@ -21,7 +21,7 @@ def addHistoricalPowerTrackJobs():
     })
 
 
-    response = requests.request("POST", url, headers=headers, data = payload, auth=('mgagliese@viralnation.com', 'v1ralNation!'))
+    response = requests.request("POST", url, headers=headers, data = payload, auth=('','''))
 
     print(response.text)
 
@@ -39,7 +39,7 @@ def getJobStatus():
         "Content-Type": "application/json",
     }
 
-    response = requests.request("GET", url, headers=headers, auth=('mgagliese@viralnation.com', 'v1ralNation!'))
+    response = requests.request("GET", url, headers=headers, auth=('','''))
 
     print(response.text)
 
@@ -56,7 +56,7 @@ def acceptJobs():
         "status": "accept"
     })
 
-    response = requests.request("PUT", url, headers=headers, data=payload, auth=('mgagliese@viralnation.com', 'v1ralNation!'))
+    response = requests.request("PUT", url, headers=headers, data=payload, auth=('','''))
 
     print(response.text)
 
@@ -75,7 +75,7 @@ def getResults():
         "Content-Type": "application/json",
     }
 
-    response = requests.request("GET", url, headers=headers, auth=('mgagliese@viralnation.com', 'v1ralNation!'))
+    response = requests.request("GET", url, headers=headers, auth=('','''))
 
     print(response.text)
 

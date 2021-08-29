@@ -12,7 +12,7 @@ def complianceAPI():
     headers= {
         "Content-Type": "application/json",
         "Accept-Encoding": "gzip",
-        "Authorization": "Bearer AAAAAAAAAAAAAAAAAAAAAMNCNAEAAAAADN%2BIKOlHzcyObnSv8f3pxNXCaR0%3DvzufJtYIx1rOTSx3VCiFrw7oUjiTP7Ix83pEyjmr5o0ilNfk81"
+        "Authorization": "Bearer "
     }
 
     payload = json.dumps({

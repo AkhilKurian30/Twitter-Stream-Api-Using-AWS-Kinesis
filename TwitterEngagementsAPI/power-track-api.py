@@ -17,7 +17,7 @@ def addRulesPowerTrackAPI():
         ]
     })
 
-    response = requests.request("POST", url, headers=headers, data = payload, auth=('mgagliese@viralnation.com', 'v1ralNation!'))
+    response = requests.request("POST", url, headers=headers, data = payload, auth=('','''))
     print(response.text)
 
 
@@ -27,7 +27,7 @@ def streaming():
 
     headers = {"Content-Type": "application/json"}
     req = requests.Request("GET",'https://gnip-stream.twitter.com/stream/powertrack/accounts/viralnation/publishers/twitter/prod.json',
-                           headers=headers, auth=('mgagliese@viralnation.com', 'v1ralNation!')).prepare()
+                           headers=headers, auth=('',''')).prepare()
 
     resp = s.send(req, stream=True)
 

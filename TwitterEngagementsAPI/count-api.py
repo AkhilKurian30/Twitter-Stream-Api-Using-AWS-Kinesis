@@ -17,7 +17,7 @@ def searchApi(product):
        "bucket":"day"
     })
 
-    response = requests.request("POST", url, headers=headers, data = payload, auth=('mgagliese@viralnation.com', 'v1ralNation!'))
+    response = requests.request("POST", url, headers=headers, data = payload, auth=('', ''))
 
     resp = json.loads(response.text)
     print(response.text)
